@@ -83,7 +83,6 @@ int main()
                 {
                     do
                     {
-                        temp.setDateOfOrder();
                         temp.show_all();
 
                         check = 1;

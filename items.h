@@ -13,12 +13,13 @@
 
 class Items : public TableData
 {
-    std::string itemsData;
     std::vector<Gpu> gpus;
     std::vector<Cpu> cpus;
     std::vector<HardDrive> hardDrives;
     std::vector<Ram> rams;
 public:
+    Items();
+    Items(const Items& i);
     void add_item();
     int search_item(int idItem);
     void delete_item();

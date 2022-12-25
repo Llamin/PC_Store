@@ -15,10 +15,22 @@ extern int ID_ORDERS;
 
 Order::Order()
     {
+        d.setCurrentDate();
         idOrder = ++ID_ORDERS;
         std::cout << "\nEnter your phone number: ";
         phoneNumber = numInput();
     }
+
+Order::Order(const Order& o)
+{
+    totalPrice = o.totalPrice;
+    phoneNumber = o.phoneNumber;
+    idOrder = o.idOrder;
+    gpus = o.gpus;
+    cpus = o.cpus;
+    hardDrives = o.hardDrives;
+    rams = o.rams;
+}
 
 int Order::add_item(Items storage)
     {

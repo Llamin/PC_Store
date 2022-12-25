@@ -8,6 +8,7 @@ class HardDrive : public Components
     int hd_size;
 public:
     HardDrive();
+    HardDrive(const HardDrive& c);
     int getSize();
     void setSize(int hd_size);
     void printInfo();

@@ -39,6 +39,16 @@ Gpu::Gpu()
         << std::endl;
     }
 
+Gpu::Gpu(const Gpu& c)
+{
+    model = c.model;
+    brand = c.brand;
+    price = c.price;
+    d = c.d;
+    idComponent = c.idComponent;
+    gpu_size = c.gpu_size;
+}
+
 void Gpu::setSize(int gpu_size)
     {
         this->gpu_size = gpu_size;

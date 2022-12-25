@@ -40,6 +40,16 @@ HardDrive::HardDrive()
         << std::endl;
     }
 
+HardDrive::HardDrive(const HardDrive& c)
+{
+    model = c.model;
+    brand = c.brand;
+    price = c.price;
+    d = c.d;
+    idComponent = c.idComponent;
+    hd_size = c.hd_size;
+}
+
 int HardDrive::getSize()
     {
         return hd_size;

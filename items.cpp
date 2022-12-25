@@ -10,7 +10,18 @@
 
 #include "Items.h"
 
-extern std::string itemsFileName;
+Items::Items()
+{
+
+}
+
+Items::Items(const Items& i)
+{
+    gpus = i.gpus;
+    cpus = i.cpus;
+    hardDrives = i.hardDrives;
+    rams = i.rams;
+}
 
 void Items::add_item()
     {

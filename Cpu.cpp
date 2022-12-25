@@ -39,6 +39,16 @@ Cpu::Cpu()
         << std::endl;
     }
 
+Cpu::Cpu(const Cpu& c)
+{
+    model = c.model;
+    brand = c.brand;
+    price = c.price;
+    d = c.d;
+    idComponent = c.idComponent;
+    frequency = c.frequency;
+}
+
 int Cpu::getFrequency()
     {
         return frequency;
